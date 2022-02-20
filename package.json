@@ -1,0 +1,19 @@
+{
+  "name": "c1-web",
+  "version": "1.0.0",
+  "description": "Curso Diseno Web - Coursera",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waortegaand/c1-web.git"
+  },
+  "author": "Wilson Ortega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waortegaand/c1-web/issues"
+  },
+  "homepage": "https://github.com/waortegaand/c1-web#readme"
+}
