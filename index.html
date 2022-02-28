@@ -11,18 +11,80 @@
     -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
 
     <title>Guia Hoteles</title>
+    <link rel="icon" type="image/x-icon" href="/img/bank.svg">
   </head>
   <body>
-    <div class="jumbotron jumbotron-fluid">
-    	<div class="container">
-    		<h1 class="display-4">Hoteles</h1>
-    		<h2 class="lead">La mejor opción para disfrutar de la estadía en cualquier ciudad.</h2>
-    	</div>
-	</div>
+<!--  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Hoteles</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Precios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Terminos y Condiciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Hoteles</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="precio.html">Precios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Terminos y Condiciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+
+
+
+
+<!--   <img src="img/banner.jpg" class="img-fluid" alt="hotel banner https://unsplash.com/@ciudadmaderas">   https://unsplash.com/@nando0515 -->
+<div class="imagen jumbotron jumbotron-fluid d-flex align-items-center justify-content-center">
+    <div class="container">
+      <div class="row box text-center py-lg-5">
+    		<h1 class="display-3">Hoteles</h1>
+        <h2 class="lead">La mejor opción para disfrutar de la estadía en cualquier ciudad.</h2>
+      </div>
+    </div>
+</div>
+
+  
+  
 <div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+        </ol>
+    </nav>
+
   <div class="d-flex flex-wrap">
     <div class="card-sup col-4">
       <h4>¿Por qué hospedarte en un hotel?</h4>
@@ -41,51 +103,76 @@
   <hr>
   
   <div class="d-flex flex-wrap">
-    <div class="card-hotel d-flex flex-column justify-content-between">
-      <div><h4>Hotel 1</h4>
-      <p>Con piscinas al aire libre, situado frente a Playa, en Cancún. La propiedad cuenta con el Splash Water World, un parque acuático con toboganes, además de régimen todo incluido 24h.</p></div>
-      <div><button type="button" class="btn btn-outline-secondary btn-reserva">Seleccionar</button></div>
+    <div class="card card-hotel d-flex flex-column justify-content-between">
+      <img class="card-img-top" src="img/hotel_1.jpg" alt="hotel img 1 https://unsplash.com/@paul_nic">
+      <div class="card-body"><h4 class="card-title">Hotel 1</h4>
+        <h6 class="card-subtitle text-muted">Pais Hotel</h6>
+      <p class="card-text">Con piscinas al aire libre, situado frente a Playa, en Cancún. La propiedad cuenta con el Splash Water World, un parque acuático con toboganes, además de régimen todo incluido 24h.</p></div>
+      <div><button type="button" class="btn btn-outline-secondary btn-reserva"><span class="oi oi-check"></span> Seleccionar</button></div>
     </div>
-    <div class="card-hotel d-flex flex-column justify-content-between">
-      <div><h4>Hotel 2</h4>
-      <p>Cuenta con zona privada de playa, parque acuático y piscina al aire libre todo el año, además de wi-fi gratis en zonas comunes. Con acceso directamente en la playa.</p></div>
-      <div><button type="button" class="btn btn-outline-secondary btn-reserva">Seleccionar</button></div>
+
+    <div class="card card-hotel d-flex flex-column justify-content-between">
+      <img class="card-img-top" src="img/hotel_2.jpg" alt="hotel img 2 https://unsplash.com/@visualsofdana">
+      <div class="card-body"><h4 class="card-title">Hotel 2</h4>
+        <h6 class="card-subtitle text-muted">Pais Hotel</h6>
+      <p class="card-text">Cuenta con zona privada de playa, parque acuático y piscina al aire libre todo el año, además de wi-fi gratis en zonas comunes. Con acceso directamente en la playa.</p></div>
+      <div><button type="button" class="btn btn-outline-secondary btn-reserva"><span class="oi oi-check"></span> Seleccionar</button></div>
     </div>
-    <div class="card-hotel d-flex flex-column justify-content-between">
-      <div><h4>Hotel 3</h4>
-      <p>Ubicado en Cancún, frente a la playa, se encuentra a 300 m del Boulevard Kukulkan y a 25 minutos en coche de la Reserva Ecológica Ombligo Verde. El Aeropuerto Internacional de la ciudad está a 18 km. </p></div>
-      <div><button type="button" class="btn btn-outline-secondary btn-reserva">Seleccionar</button></div>
+
+    <div class="card card-hotel d-flex flex-column justify-content-between">
+      <img class="card-img-top" src="img/hotel_3.jpg" alt="hotel img 3 https://unsplash.com/@ahungryblonde_">
+      <div class="card-body"><h4 class="card-title">Hotel 3</h4>
+        <h6 class="card-subtitle text-muted">Pais Hotel</h6>
+      <p class="card-text">Ubicado en Cancún, frente a la playa, se encuentra a 300 m del Boulevard Kukulkan y a 25 minutos en coche de la Reserva Ecológica Ombligo Verde. El Aeropuerto Internacional de la ciudad está a 18 km. </p></div>
+      <div><button type="button" class="btn btn-outline-secondary btn-reserva"><span class="oi oi-check"></span> Seleccionar</button></div>
     </div>
-    <div class="card-hotel d-flex flex-column justify-content-between">
-      <div><h4>Hotel 4</h4>
-      <p>Disfruta de una ubicación céntrica en Miami, a pocos pasos de Brickell City Centre y cerca de PortMiami. Reserva una de las 84 habitaciones climatizadas, todas dotadas de cocina básica.</p></div>
-      <div><button type="button" class="btn btn-outline-secondary btn-reserva">Seleccionar</button></div>
+
+    <div class="card card-hotel d-flex flex-column justify-content-between">
+      <img class="card-img-top" src="img/hotel_4.jpg" alt="hotel img 4 https://unsplash.com/@theanamcxr">
+      <div class="card-body"><h4 class="card-title">Hotel 4</h4>
+        <h6 class="card-subtitle text-muted">Pais Hotel</h6>
+      <p class="card-text">Disfruta de una ubicación céntrica en Miami, a pocos pasos de Brickell City Centre y cerca de PortMiami. Reserva una de las 84 habitaciones climatizadas, todas dotadas de cocina básica.</p></div>
+      <div><button type="button" class="btn btn-outline-secondary btn-reserva"><span class="oi oi-check"></span> Seleccionar</button></div>
     </div>
-    <div class="card-hotel d-flex flex-column justify-content-between">
-      <div><h4>Hotel 5</h4>
-      <p>Estarás en pleno corazón de Miami, a pocos pasos de Mary Brickell Village y de Vizcaya Museum and Gardens. Este hotel se encuentra cerca de Miami Convention Center y de HistoryMiami.</p></div>
-      <div><button type="button" class="btn btn-outline-secondary btn-reserva">Seleccionar</button></div>
+
+    <div class="card card-hotel d-flex flex-column justify-content-between">
+      <img class="card-img-top" src="img/hotel_1.jpg" alt="hotel img 5 https://unsplash.com/@paul_nic">
+      <div class="card-body"><h4 class="card-title">Hotel 5</h4>
+        <h6 class="card-subtitle text-muted">Pais Hotel</h6>
+      <p class="card-text">Estarás en pleno corazón de Miami, a pocos pasos de Mary Brickell Village y de Vizcaya Museum and Gardens. Este hotel se encuentra cerca de Miami Convention Center y de HistoryMiami.</p></div>
+      <div><button type="button" class="btn btn-outline-secondary btn-reserva"><span class="oi oi-check"></span> Seleccionar</button></div>
     </div>
-    <div class="card-hotel d-flex flex-column justify-content-between">
-      <div><h4>Hotel 6</h4>
-      <p> Se encuentra muy cerca de PortMiami y Florida Grand Opera. Disfruta de este hotel de 4,5 estrellas.</p></div>
-      <div><button type="button" class="btn btn-outline-secondary btn-reserva">Seleccionar</button></div>
+
+    <div class="card card-hotel d-flex flex-column justify-content-between">
+      <img class="card-img-top" src="img/hotel_2.jpg" alt="hotel img 6 https://unsplash.com">
+      <div class="card-body"><h4 class="card-title">Hotel 6</h4>
+        <h6 class="card-subtitle text-muted">Pais Hotel</h6>
+      <p class="card-text"> Se encuentra muy cerca de PortMiami y Florida Grand Opera. Disfruta de este hotel de 4,5 estrellas.</p></div>
+      <div><button type="button" class="btn btn-outline-secondary btn-reserva"><span class="oi oi-check"></span> Seleccionar</button></div>
     </div>
-    <div class="card-hotel d-flex flex-column justify-content-between">
-      <div><h4>Hotel 7</h4>
-      <p>Descripcion 7: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p></div>
-      <div><button type="button" class="btn btn-outline-secondary btn-reserva">Seleccionar</button></div>
+
+    <div class="card card-hotel d-flex flex-column justify-content-between">
+      <img class="card-img-top" src="img/hotel_3.jpg" alt="hotel img 7 https://unsplash.com">
+      <div class="card-body"><h4 class="card-title">Hotel 7</h4>
+        <h6 class="card-subtitle text-muted">Pais Hotel</h6>
+      <p class="card-text">Descripcion 7: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p></div>
+      <div><button type="button" class="btn btn-outline-secondary btn-reserva"><span class="oi oi-check"></span> Seleccionar</button></div>
     </div>
-    <div class="card-hotel d-flex flex-column justify-content-between">
-      <div><h4>Hotel 8</h4>
-      <p>Descripcion 8: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p></div>
-      <div><button type="button" class="btn btn-outline-secondary btn-reserva">Seleccionar</button></div>
+
+    <div class="card card-hotel d-flex flex-column justify-content-between">
+      <img class="card-img-top" src="img/hotel_4.jpg" alt="hotel img 8 https://unsplash.com">
+      <div class="card-body"><h4 class="card-title">Hotel 8</h4>
+        <h6 class="card-subtitle text-muted">Pais Hotel</h6>
+      <p class="card-text">Descripcion 8: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p></div>
+      <div><button type="button" class="btn btn-outline-secondary btn-reserva"><span class="oi oi-check"></span> Seleccionar</button></div>
     </div>
   </div>
 </div>
 
 
-  <footer class="footer">
+    
+
+  <footer class="footer py-5">
     <div class="row d-flex justify-content-between">
       <div class="col-sm-4 d-flex flex-column">
         <a href="#">Facebook</a>
@@ -94,8 +181,8 @@
       </div>
       <div class="col-sm-4 addr d-flex flex-column align-items-center">
         <addres>
-          <p>Tel: (+057) 1010101</p>
-          <p>e-mail: hoteles@mail.com</p>
+          <p><span class="oi oi-phone"></span>: (+057) 1010101</p>
+          <p><span class="oi oi-envelope-closed"></span>: hoteles@mail.com</p>
         </addres>
       </div>
       <div class="col-sm-4 d-flex flex-column align-items-end">
@@ -124,3 +211,4 @@
     -->
   </body>
 </html>
+

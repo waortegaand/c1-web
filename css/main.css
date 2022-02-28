@@ -1,8 +1,29 @@
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container{
+  flex: 1;
+}
+
+.box{
+  background: rgba(0, 19, 128, 0.5);
+}
+
 .jumbotron{
   /*background-color: rgb(0, 89, 233);*/
   background-color: rgb(0, 113, 128);
   color: black;
-  height: 120px;
+  margin-top: 50px;/* */
+}
+
+.imagen{
+  height: 600px;
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  width: 100%;
 }
 
 .jumbotron h1, h2{
@@ -16,6 +37,9 @@
   background-color: rgb(0, 113, 128);
   margin-bottom: 0px;
   margin-top: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer a{
@@ -25,12 +49,13 @@
 
 .card-hotel{
   flex: 1 250px;
-  padding: 10px;
   margin: 5px;
-  /*border-style: solid;
+  /*
+  padding: 10px 0px 0px 0px;
+  border-style: solid;
   border-color: rgb(92, 96, 99);
   border-width: 2pt;*/
-  border-radius: 5%;
+  border-radius: 0%;
   background-color: rgb(212, 255, 209); 
 }
 
@@ -38,6 +63,7 @@
   width: 100%;
   background-color: rgb(0, 113, 128);
   color: white;
+  border-radius: 0;
 }
 
 .card-sup{
@@ -47,4 +73,8 @@
 
 .addr p{
   color: white;
+}
+
+th{
+  white-space:nowrap;
 }
